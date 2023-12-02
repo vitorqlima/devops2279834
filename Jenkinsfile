@@ -7,6 +7,7 @@ pipeline {
                 // Exemplo de passos para construir o código
                 sh 'echo "Construindo o código..."'
                 sh 'npm install' // Comando para instalar dependências, se for um projeto Node.js
+                sh 'npm install -g nohup'
             }
         }
         stage('Test') {
