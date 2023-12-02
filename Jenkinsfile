@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clonar Repositório') {
             steps {
-                git branch: 'master', url: 'https://github.com/vitorqlima/devops2279834.git'
+                git branch: 'main', url: 'https://github.com/vitorqlima/devops2279834.git'
             }
         }
         stage('Construir') {
