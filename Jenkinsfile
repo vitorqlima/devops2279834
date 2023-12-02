@@ -4,23 +4,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                // Exemplo de passos para construir o código
                 sh 'echo "Construindo o código..."'
-                sh 'npm install' // Comando para instalar dependências, se for um projeto Node.js
+                sh 'npm install' 
             }
         }
         stage('Test') {
             steps {
-                // Exemplo de passos para executar testes
+                
                 sh 'echo "Executando testes..."'
-                sh 'npm test' // Comando para executar testes, se for um projeto Node.js
+                sh 'npm test' 
             }
         }
         stage('Deploy') {
             steps {
-                // Exemplo de passos para implantar o aplicativo
+                /
                 sh 'echo "Implantando o aplicativo..."'
-                sh 'npm run deploy' // Comando para implantar, se for um projeto Node.js
             }
         }
     }
